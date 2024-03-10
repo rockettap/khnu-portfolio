@@ -44,11 +44,6 @@ li:not(:last-child) {
   gap: 16px;
 }
 
-.social__item a {
-  text-decoration: none;
-  display: flex;
-}
-
 .social__item {
   transition: opacity 0.2s ease-in-out;
 }
@@ -59,4 +54,30 @@ li:not(:last-child) {
 
 .social__item:hover {
   opacity: 0.5;
+}
+
+.social__link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+
+.social__link::before {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 32px;
+  height: 32px;
+  margin-right: 8px;
+}
+
+.social__link--github::before {
+  background: center / contain no-repeat url("/img/icons8-github.svg");
+}
+
+.social__link--instagram::before {
+  background: center / contain no-repeat url("/img/icons8-instagram.svg");
 }
