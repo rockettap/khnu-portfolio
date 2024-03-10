@@ -75,9 +75,9 @@ li:not(:last-child) {
 }
 
 .social__link--github::before {
-  background: center / contain no-repeat url("/img/icons8-github.svg");
+  background: center / contain no-repeat url("../img/icons8-github.svg");
 }
 
 .social__link--instagram::before {
-  background: center / contain no-repeat url("/img/icons8-instagram.svg");
+  background: center / contain no-repeat url("../img/icons8-instagram.svg");
 }
